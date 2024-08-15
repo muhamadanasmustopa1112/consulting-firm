@@ -33,6 +33,15 @@ body {
 }
 
 @layer base {
+  .font-d1 {
+    @apply text-[88px] font-bold leading-[96px] tracking-[-2.2px];
+  }
+  .font-d2 {
+    @apply text-[72px] font-bold leading-[80px] tracking-[-1.8px];
+  }
+  .font-d3 {
+    @apply text-[56px] font-bold leading-[64px] tracking-[-1.4px];
+  }
   .font-h5 {
     @apply text-xl font-bold leading-7 tracking-[-.2px];
   }
@@ -45,6 +54,6 @@ body {
   }
 
   .button-normal {
-    @apply bg-white uppercase rounded-md hover:brightness-90 transition-all flex items-center justify-center h-12;
+    @apply bg-white uppercase text-dark rounded-md hover:brightness-90 transition-all flex items-center justify-center h-12;
   }
 }
