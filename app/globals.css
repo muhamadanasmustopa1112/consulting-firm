@@ -42,6 +42,9 @@ body {
   .font-d3 {
     @apply text-[56px] font-bold leading-[64px] tracking-[-1.4px];
   }
+  .font-d3-nobold {
+    @apply text-[56px] leading-[64px] tracking-[-1.4px];
+  }
   .font-h5 {
     @apply text-xl font-bold leading-7 tracking-[-.2px];
   }
