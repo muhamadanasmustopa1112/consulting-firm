@@ -87,7 +87,7 @@ const page = () => {
             </svg>
           </div>
         </div>
-        <button className="button-normal font-h5">Login</button>
+        <button className="button-normal text-dark font-h5">Login</button>
       </div>
     </div>
   );

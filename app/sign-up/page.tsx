@@ -77,7 +77,7 @@ const Page = () => {
           </div>
         </div>
 
-        <button className="button-normal font-h5">Register</button>
+        <button className="button-normal text-dark font-h5">Register</button>
       </div>
     </div>
   );
