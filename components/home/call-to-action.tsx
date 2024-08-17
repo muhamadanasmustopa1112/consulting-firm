@@ -19,7 +19,7 @@ function CallToAction() {
       <div className='absolute -z-10 aspect-square h-full right-0 -top-1/4 overflow-hidden before:content-[""] before:absolute before:aspect-square before:h-[90%] before:-right-1/4 before:top-1/2 before:-translate-y-1/2 before:rounded-full before:blur-[100px] before:bg-white before:-z-10 before:bg-opacity-15'></div>
       <div className="min-w-0 w-full md:w-2/5 flex flex-col gap-6 z-50 ">
         <Link
-          href="/login"
+          href="/sign-up"
           className="w-full p-4 flex flex-row justify-between items-center border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] transition-colors hover:bg-grey"
         >
           <div className="flex flex-col items-center gap-1">
@@ -70,7 +70,7 @@ function CallToAction() {
           </div>
         </div>
         <Link
-          href="/login"
+          href="/sign-up"
           className={
             sourceSansPro.className +
             " border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] p-4 inline-flex justify-between items-center self-start gap-4 transition-colors hover:bg-grey mx-auto md:mx-0"
