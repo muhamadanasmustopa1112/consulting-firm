@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import sourceSansPro from "@/components/ui/sourceSansPro";
 
 const CallToAction = () => {
@@ -115,12 +116,14 @@ const CallToAction = () => {
           </button>
         </div>
         <div className="self-center">
-          <button
-            type="button"
-            className="px-4 py-2 border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] w-36 transition-colors hover:bg-grey"
-          >
-            Contact Us
-          </button>
+          <Link href="/contact">
+            <button
+              type="button"
+              className="px-4 py-2 border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] w-36 transition-colors hover:bg-grey"
+            >
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
     </div>
