@@ -3,12 +3,30 @@ import React from "react";
 
 function Solutions() {
   const solutions = [
-    "Consulting Services",
-    "Marketing Solutions",
-    "Staffing Support",
-    "Auxiliary Services",
-    "Global Business Transitions",
-    "AI Consulting Services",
+    {
+      name: "Consulting Services",
+      link: "services/consulting",
+    },
+    {
+      name: "Marketing Solutions",
+      link: "services/marketing",
+    },
+    {
+      name: "Staffing Support",
+      link: "services/staffing",
+    },
+    {
+      name: "Auxiliary Services",
+      link: "services/auxiliary-services",
+    },
+    {
+      name: "Global Business Transitions",
+      link: "services/business-transition",
+    },
+    {
+      name: "AI Consulting Services",
+      link: "services/ai-services",
+    },
   ];
   return (
     <section className="pt-10 px-4 md:p-32 md:pt-0 flex flex-col gap-8 md:gap-14 relative z-20">
@@ -21,12 +39,12 @@ function Solutions() {
       <div className="flex flex-row flex-wrap justify-center items-center gap-6">
         {solutions.map((item, idx) => (
           <Link
-            href=""
+            href={item.link}
             key={idx}
             className="border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] p-4 transition-colors hover:bg-grey w-[300px] md:w-auto"
           >
             <p className="text-lg md:text-2xl font-semibold text-center">
-              {item}
+              {item.name}
             </p>
           </Link>
         ))}
