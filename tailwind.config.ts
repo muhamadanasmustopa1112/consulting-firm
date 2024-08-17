@@ -18,6 +18,10 @@ const config: Config = {
         ..._colors,
         grey: "#8B8A8C",
         dark: "#0F0F0F",
+        link: "#99C3FF",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
