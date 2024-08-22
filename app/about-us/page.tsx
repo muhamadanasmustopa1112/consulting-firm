@@ -31,8 +31,6 @@ const page = () => {
           well-being and success.
         </p>
       </div>
-      <OurTeam />
-      <OurPartner />
     </div>
   );
 };
