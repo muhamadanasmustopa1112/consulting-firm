@@ -4,7 +4,7 @@ import Info from "@/components/coworking/info";
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-8 px-6 md:px-12 lg:px-44 py-8">
+    <div className="flex flex-col gap-8 px-6 md:px-12 lg:px-44 py-8 bg-black text-white min-h-screen">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
         IURIS Coworking Space: Discover Prestige
       </h1>

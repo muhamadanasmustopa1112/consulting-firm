@@ -63,7 +63,7 @@ export default function Page() {
   ];
 
   return (
-    <div className='flex flex-col gap-8 md:min-h-[40vh] w-full lg:w-4/5 relative z-20 py-12 md:before:content-[""] md:before:absolute md:before:top-1/2 md:before:-translate-y-1/2 md:before:left-1/2 md:before:block md:before:h-[calc(100%-3rem)] md:before:w-[2px] md:before:bg-white'>
+    <div className='bg-black/60 text-white flex flex-col gap-8 md:min-h-[40vh] w-full lg:w-4/5 relative z-20 py-12 md:before:content-[""] md:before:absolute md:before:top-1/2 md:before:-translate-y-1/2 md:before:left-1/2 md:before:block md:before:h-[calc(100%-3rem)] md:before:w-[2px] md:before:bg-white'>
       {events.map((item, idx) => {
         const isEven = idx % 2 == 0;
         return (

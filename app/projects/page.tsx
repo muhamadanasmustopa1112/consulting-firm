@@ -2,7 +2,7 @@ import ListProjects from "@/components/projects/list";
 
 export default function Page() {
   return (
-    <div className="py-16 px-4 md:py-32 md:px-12 lg:py-48 lg:px-32 relative z-10 max-w-full">
+    <div className="py-16 px-4 md:py-32 md:px-12 lg:py-48 lg:px-32 relative z-10 max-w-full bg-black/80 text-white">
       <div className="flex flex-col md:flex-row justify-stretch gap-8">
         <div className="md:w-3/5">
           <h1 className="text-3xl md:text-4xl font-semibold mb-4 break-words">

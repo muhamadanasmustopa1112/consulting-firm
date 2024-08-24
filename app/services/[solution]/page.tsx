@@ -308,7 +308,7 @@ export default function Page({ params }: { params: { solution: string } }) {
     notFound();
   }
   return (
-    <div className="relative z-20 py-12">
+    <div className="relative z-20 py-12 text-white">
       <div className="flex flex-row justify-center gap-4">
         {services.map((item, idx) => (
           <Link

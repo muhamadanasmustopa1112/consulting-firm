@@ -56,7 +56,7 @@ export default function Page({ params }: { params: { asset: string } }) {
   }
 
   return (
-    <div className="flex flex-col gap-8 justify-center relative z-10">
+    <div className="flex flex-col gap-8 justify-center relative z-10 bg-black text-white">
       <h1 className="text-center text-4xl font-semibold">
         IURIS Assets : Asset Acquisition Division
       </h1>

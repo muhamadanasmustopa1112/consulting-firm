@@ -3,7 +3,7 @@ import ContactForm from "@/components/contact/form";
 
 export default function Page() {
   return (
-    <div className="py-8 px-56 relative z-10">
+    <div className="py-8 px-56 relative z-10 bg-black/70 text-white">
       <div className="flex flex-row justify-stretch gap-8">
         <div className="w-full flex flex-col gap-4">
           <h1 className="text-4xl font-semibold mb-4">
