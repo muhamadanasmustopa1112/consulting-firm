@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
@@ -12,7 +12,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-}
+};
 
 export function generateMetadata(): Metadata {
   let host = headers().get("host");
@@ -33,7 +33,8 @@ export function generateMetadata(): Metadata {
       default: "IURIS International Indonesia | Consulting Firm",
       template: "%s - IURIS International Indonesia | Consulting Firm",
     },
-    description: "Platform that uses human and AI consultants to help you with any consultation task quickly.",
+    description:
+      "Platform that uses human and AI consultants to help you with any consultation task quickly.",
     manifest: "/site.webmanifest",
     icons: [
       {
@@ -61,7 +62,8 @@ export function generateMetadata(): Metadata {
     openGraph: {
       type: "website",
       title: "IURIS International Indonesia | Consulting Firm",
-      description: "Platform that uses human and AI consultants to help you with any consultation task quickly.",
+      description:
+        "Platform that uses human and AI consultants to help you with any consultation task quickly.",
       locale: "en",
       images: [
         {
@@ -72,8 +74,8 @@ export function generateMetadata(): Metadata {
         },
       ],
     },
-  }
-};
+  };
+}
 
 export default function RootLayout({
   children,
@@ -82,7 +84,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={`montserrat.className bg-black`}>
         <Navbar />
         {children}
         <Footer />

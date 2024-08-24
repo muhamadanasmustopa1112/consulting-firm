@@ -14,7 +14,7 @@ const sourceSansPro = localFont({
 
 function CallToAction() {
   return (
-    <section className="px-4 py-[60px] md:pl-56 md:pr-24 md:py-24 flex flex-row items-center gap-4 md:gap-24 relative z-0">
+    <section className="px-4 py-[60px] md:pl-56 md:pr-24 md:py-24 flex flex-row items-center gap-4 md:gap-24 relative z-0 bg-black text-white">
       <div className='absolute -z-10 aspect-square h-5/6 left-0 -translate-x-1/2 before:content-[""] before:absolute before:aspect-square before:h-full before:left-0 before:rounded-full before:blur-[100px] before:bg-white before:-z-10 before:bg-opacity-15'></div>
       <div className='absolute -z-10 aspect-square h-full right-0 -top-1/4 overflow-hidden before:content-[""] before:absolute before:aspect-square before:h-[90%] before:-right-1/4 before:top-1/2 before:-translate-y-1/2 before:rounded-full before:blur-[100px] before:bg-white before:-z-10 before:bg-opacity-15'></div>
       <div className="min-w-0 w-full md:w-2/5 flex flex-col gap-6 z-50 ">

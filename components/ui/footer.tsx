@@ -8,7 +8,7 @@ function Footer() {
     <footer
       className={
         sourceSansPro.className +
-        " px-4 pt-10 pb-16 md:py-8 md:px-24 flex flex-col md:flex-row justify-between gap-12 md:gap-36 bg-black border-t border-white"
+        " px-4 pt-10 pb-16 md:py-8 md:px-24 flex flex-col md:flex-row justify-between gap-12 md:gap-36 bg-black text-white border-t border-white"
       }
     >
       <div className="flex  gap-8 w-full md:w-1/3 flex-col-reverse">

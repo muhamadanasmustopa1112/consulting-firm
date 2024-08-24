@@ -1,6 +1,5 @@
 "use client";
 
-
 import useResponsive from "@/hooks/useResponsive";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,7 +30,7 @@ const DekstopVersion = ({ links, pathname }: NavbarType) => {
           return (
             <Link
               key={idx}
-              className={`transition-all uppercase rounded-full duration-300 py-2 px-4 hover:bg-grey ${activeClass}`}
+              className={`transition-all uppercase rounded-full duration-300 py-2 px-4 hover:bg-grey ${activeClass} text-white`}
               href={item?.path}
             >
               {item.name}

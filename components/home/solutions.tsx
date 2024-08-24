@@ -29,7 +29,7 @@ function Solutions() {
     },
   ];
   return (
-    <section className="pt-10 px-4 md:p-32 md:pt-0 flex flex-col gap-8 md:gap-14 relative z-20">
+    <section className="pt-10 px-4 md:p-32 md:pt-0 flex flex-col gap-8 md:gap-14 relative z-20 bg-black text-white">
       <div className="flex flex-col gap-2 text-center">
         <h3 className="text-4xl font-semibold leading-10">Our Solutions</h3>
         <h4 className="mx-auto w-[308px] md:w-full">
