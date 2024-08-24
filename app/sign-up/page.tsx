@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const Page = () => {
+export default function Page() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -81,6 +81,4 @@ const Page = () => {
       </div>
     </div>
   );
-};
-
-export default Page;
+}

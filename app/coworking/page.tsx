@@ -1,9 +1,8 @@
 import AboutCoworking from "@/components/coworking/about";
 import CallToAction from "@/components/coworking/cta";
 import Info from "@/components/coworking/info";
-import React from "react";
 
-const page = () => {
+export default function Page() {
   return (
     <div className="flex flex-col gap-8 px-6 md:px-12 lg:px-44 py-8">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
@@ -17,6 +16,4 @@ const page = () => {
       <CallToAction />
     </div>
   );
-};
-
-export default page;
+}

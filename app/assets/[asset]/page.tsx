@@ -3,9 +3,8 @@ import Motorcycles from "@/components/assets/motorcycles";
 import Properties from "@/components/assets/properties";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import React from "react";
 
-const page = ({ params }: { params: { asset: string } }) => {
+export default function Page({ params }: { params: { asset: string } }) {
   const assets = [
     {
       name: "Cars",
@@ -80,6 +79,4 @@ const page = ({ params }: { params: { asset: string } }) => {
       {data?.children}
     </div>
   );
-};
-
-export default page;
+}

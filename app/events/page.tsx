@@ -1,6 +1,4 @@
-import React from "react";
-
-function Page() {
+export default function Page() {
   const events = [
     {
       date: "Jan\n2024",
@@ -91,5 +89,3 @@ function Page() {
     </div>
   );
 }
-
-export default Page;

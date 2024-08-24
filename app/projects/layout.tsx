@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import backgroundImage from "@/public/img/projects.png";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative overflow-x-hidden">
       {children}
@@ -19,6 +19,4 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </div>
     </div>
   );
-};
-
-export default Layout;
+}

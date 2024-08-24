@@ -1,9 +1,7 @@
-import OurPartner from "@/components/about-us/our-partner";
-import OurTeam from "@/components/about-us/our-team";
 import sourceSansPro from "@/components/ui/sourceSansPro";
 import React from "react";
 
-const page = () => {
+export default function Page() {
   return (
     <div className="flex flex-col items-center gap-12 px-4 py-8 md:px-8 lg:px-16">
       <div className="w-full md:w-3/4 lg:w-1/2">
@@ -33,6 +31,4 @@ const page = () => {
       </div>
     </div>
   );
-};
-
-export default page;
+}
