@@ -8,7 +8,7 @@ export default function Page() {
           <h1 className="text-3xl md:text-4xl font-semibold mb-4 break-words">
             Projects - IURIS
           </h1>
-          <p className="leading-relaxed mb-4 text-sm md:text-base break-words">
+          <p className="leading-relaxed mb-4 text-base break-words">
             Welcome to our Upcoming Projects Hub! Explore the cutting-edge
             initiatives we have in the pipeline. If you're eager to delve deeper
             into our work, request a whitepaper, lightpaper, or technical
@@ -31,7 +31,7 @@ export default function Page() {
         </div>
       </div>
       <div className="mt-16 md:mt-32 w-full lg:w-2/3">
-        <h2 className="text-3xl md:text-4xl font-semibold leading-snug mb-4 break-words">
+        <h2 className="text-2xl md:text-4xl font-semibold leading-snug mb-4 break-words">
           Unlock the power of legal AI with our insightful content, guiding you
           towards informed decisions in the ever-evolving legal landscape.
         </h2>

@@ -58,7 +58,7 @@ const ListProjects = () => {
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold break-words">
                 {item.name}
               </h2>
-              <p className="text-xs sm:text-sm md:text-base break-words">
+              <p className="text-sm md:text-base break-words">
                 {item.description}
               </p>
             </div>
@@ -66,10 +66,10 @@ const ListProjects = () => {
         ))}
       </Swiper>
       <div className="flex flex-row gap-4 mt-4">
-        <button className="swiper-btn-navigation swiper-btn-projects-prev border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base transition-colors hover:bg-gray-700">
+        <button className="swiper-btn-navigation swiper-btn-projects-prev border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] lg:px-3 lg:py-1 px-4 py-2 text-sm sm:text-base transition-colors hover:bg-gray-700">
           Previous
         </button>
-        <button className="swiper-btn-navigation swiper-btn-projects-next border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base transition-colors hover:bg-gray-700">
+        <button className="swiper-btn-navigation swiper-btn-projects-next border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] lg:px-3 lg:py-1 px-4 py-2 text-sm sm:text-base transition-colors hover:bg-gray-700">
           Next
         </button>
       </div>

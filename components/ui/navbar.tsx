@@ -53,6 +53,9 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const isLargeScreen = useResponsive(1280);
   const pathname = usePathname();
+  const closeMenu = () => {
+    setClick(false);
+  };
   const links = [
     {
       name: "home",
@@ -108,13 +111,20 @@ function Navbar() {
     };
   }, []);
 
-  return (
-    <nav
-      className="sm:w-screen w-full container sticky top-0 p-2 sm:p-6 z-50 backdrop-blur-md mx-auto"
-      style={{
+  const navBackgroundStyle = isLargeScreen
+    ? {
         boxShadow: "2px 0px 5px rgb(0 0 0 / 0.4)",
         backgroundColor: "rgb(0 0 0 / 0.6)",
-      }}
+      }
+    : {
+        boxShadow: "2px 0px 5px rgb(0 0 0 / 0.4)",
+        backgroundColor: "rgb(0 0 0)",
+      };
+
+  return (
+    <nav
+      className="sm:w-screen w-full container sticky top-0 p-2 sm:p-6 z-50 backdrop-blur-md mx-auto text-white"
+      style={navBackgroundStyle}
     >
       <div
         ref={menuRef}
@@ -162,6 +172,7 @@ function Navbar() {
                   href={val?.path}
                   key={idx}
                   className="font-h5 uppercase py-3"
+                  onClick={closeMenu}
                 >
                   {val?.name}
                 </Link>

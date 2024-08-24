@@ -4,59 +4,59 @@ import Properties from "@/components/assets/properties";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default function Page({ params }: { params: { asset: string } }) {
-  const assets = [
-    {
-      name: "Cars",
-      path: "cars",
-      children: <Cars />,
-    },
-    {
-      name: "Motorcycles",
-      path: "motorcycles",
-      children: <Motorcycles />,
-    },
-    {
-      name: "Properties",
-      path: "properties",
-      children: <Properties />,
-    },
-    {
-      name: "Planes",
-      path: "planes",
-      children: (
-        <div className="h-48 flex justify-center items-center">
-          <h2 className="text-4xl font-semibold text-center">Coming Soon</h2>
-        </div>
-      ),
-    },
-    {
-      name: "Helicopters",
-      path: "helicopters",
-      children: (
-        <div className="h-48 flex justify-center items-center">
-          <h2 className="text-4xl font-semibold text-center">Coming Soon</h2>
-        </div>
-      ),
-    },
-    {
-      name: "Yachts",
-      path: "yachts",
-      children: (
-        <div className="h-48 flex justify-center items-center">
-          <h2 className="text-4xl font-semibold text-center">Coming Soon</h2>
-        </div>
-      ),
-    },
-  ];
+const assets = [
+  {
+    name: "Cars",
+    path: "cars",
+    children: <Cars />,
+  },
+  {
+    name: "Motorcycles",
+    path: "motorcycles",
+    children: <Motorcycles />,
+  },
+  {
+    name: "Properties",
+    path: "properties",
+    children: <Properties />,
+  },
+  {
+    name: "Planes",
+    path: "planes",
+    children: (
+      <div className="h-48 flex justify-center items-center">
+        <h2 className="text-4xl font-semibold text-center">Coming Soon</h2>
+      </div>
+    ),
+  },
+  {
+    name: "Helicopters",
+    path: "helicopters",
+    children: (
+      <div className="h-48 flex justify-center items-center">
+        <h2 className="text-4xl font-semibold text-center">Coming Soon</h2>
+      </div>
+    ),
+  },
+  {
+    name: "Yachts",
+    path: "yachts",
+    children: (
+      <div className="h-48 flex justify-center items-center">
+        <h2 className="text-4xl font-semibold text-center">Coming Soon</h2>
+      </div>
+    ),
+  },
+];
 
+export default function Page({ params }: { params: { asset: string } }) {
   const data = assets.find((item) => item.path == params.asset);
   if (data == undefined) {
     notFound();
   }
 
   return (
-    <div className="flex flex-col gap-8 justify-center relative z-10 bg-black text-white">
+    <div className="py-10 lg:py-0 flex flex-col gap-8 justify-center relative z-10 bg-black text-white">
       <h1 className="text-center text-4xl font-semibold">
         IURIS Assets : Asset Acquisition Division
       </h1>
