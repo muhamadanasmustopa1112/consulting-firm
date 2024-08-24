@@ -13,11 +13,14 @@ function Footer() {
     >
       <div className="flex  gap-8 w-full md:w-1/3 flex-col-reverse">
         <div>
-          <p>
+          <p className="text-sm lg:text-base">
             Disclaimer: Information provided may vary. Asset and opportunity
             availability subject to change.
           </p>
-          <Link href="#" className="flex items-center gap-2">
+          <Link
+            href="#"
+            className="flex items-center gap-2 text-sm lg:text-base pt-2"
+          >
             Learn More{" "}
             <span className='inline-block w-4 h-4 bg-contain bg-no-repeat bg-[url("/img/arrow-right.svg")]'></span>
           </Link>
@@ -169,7 +172,7 @@ function Footer() {
               </svg>
             </Link>
           </div>
-          <p>
+          <p className="text-sm lg:text-base">
             ©2024 IURIS LLC. PT IURIS INTERNATIONAL INDONESIA.
             <br />
             PTY IURIS. All rights reserved.
@@ -178,65 +181,69 @@ function Footer() {
       </div>
       <div className="flex-grow flex flex-wrap md:flex-nowrap flex-row justify-start md:justify-evenly gap-14">
         <div className="flex w-1/3 md:w-full flex-col gap-4">
-          <p className="text-2xl mb-4">
+          <p className="text-xl lg:text-2xl mb-4">
             <b>Company</b>
           </p>
-          <Link target="_blank" href="/whitepaper.pdf" className="text-xl">
+          <Link
+            target="_blank"
+            href="/whitepaper.pdf"
+            className="text-lg lg:text-xl"
+          >
             Whitepaper
           </Link>
           <Link
             target="_blank"
             href="https://www.loker.id/profile/pt-iuris-international-indonesia"
-            className="text-xl"
+            className="text-lg lg:text-xl"
           >
             Careers
           </Link>
-          <Link href="#" className="text-xl">
+          <Link href="#" className="text-lg lg:text-xl">
             US Law Firm
           </Link>
         </div>
         <div className="flex w-1/3 md:w-full flex-col gap-4">
-          <p className="text-2xl mb-4">
+          <p className="text-xl lg:text-2xl mb-4">
             <b>Site Map</b>
           </p>
-          <Link href="/" className="text-xl">
+          <Link href="/" className="text-lg lg:text-xl">
             Home
           </Link>
-          <Link href="/services/consulting" className="text-xl">
+          <Link href="/services/consulting" className="text-lg lg:text-xl">
             Services
           </Link>
-          <Link href="/events" className="text-xl">
+          <Link href="/events" className="text-lg lg:text-xl">
             Events
           </Link>
-          <Link href="/assets/cars" className="text-xl">
+          <Link href="/assets/cars" className="text-lg lg:text-xl">
             Assets
           </Link>
-          <Link href="/projects" className="text-xl">
+          <Link href="/projects" className="text-lg lg:text-xl">
             Projects
           </Link>
-          <Link href="/coworking" className="text-xl">
+          <Link href="/coworking" className="text-lg lg:text-xl">
             Coworking
           </Link>
-          <Link href="/about-us" className="text-xl">
+          <Link href="/about-us" className="text-lg lg:text-xl">
             About Us
           </Link>
-          <Link href="/contact" className="text-xl">
+          <Link href="/contact" className="text-lg lg:text-xl">
             Contact
           </Link>
         </div>
-        <div className="flex w-1/3 md:w-full flex-col gap-4">
-          <p className="text-2xl mb-4">
+        <div className="flex lg:w-1/2 w-full flex-col gap-4">
+          <p className="text-xl lg:text-2xl mb-4">
             <b>Privacy</b>
           </p>
-          <Link href="/privacy-policy" className="text-xl">
+          <Link href="/privacy-policy" className="text:lg lg:text-xl">
             Privacy Policy
           </Link>
-          <Link href="/terms-of-use" className="text-xl">
+          <Link href="/terms-of-use" className="text-lg lg:text-xl">
             Terms Of Use
           </Link>
-          <Link href="#" className="flex items-center gap-2 text-xl">
+          <Link href="#" className="flex items-center gap-2 text-lg lg:text-xl">
             Learn More{" "}
-            <span className='inline-block w-6 h-6 bg-contain bg-no-repeat bg-[url("/img/arrow-right.svg")]'></span>
+            <span className='inline-block w-4 h-4 lg:w-6 lg:h-6 bg-contain bg-no-repeat bg-[url("/img/arrow-right.svg")]'></span>
           </Link>
         </div>
       </div>
