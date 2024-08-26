@@ -4,7 +4,7 @@ import backgroundImage from "@/public/img/projects.png";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative">
+    <div className="overflow-hidden relative">
       {children}
       <div className="absolute bottom-0 w-screen aspect-video -z-10 overflow-hidden opacity-25">
         <Image

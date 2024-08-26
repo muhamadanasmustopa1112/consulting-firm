@@ -184,21 +184,17 @@ function Footer() {
           <p className="text-xl lg:text-2xl mb-4">
             <b>Company</b>
           </p>
-          <Link
-            target="_blank"
-            href="/whitepaper.pdf"
-            className="text-lg lg:text-xl"
-          >
+          <Link target="_blank" href="/whitepaper.pdf" className="text-lg">
             Whitepaper
           </Link>
           <Link
             target="_blank"
             href="https://www.loker.id/profile/pt-iuris-international-indonesia"
-            className="text-lg lg:text-xl"
+            className="text-lg"
           >
             Careers
           </Link>
-          <Link href="https://iuris.world" className="text-lg lg:text-xl">
+          <Link href="https://iuris.world" className="text-lg">
             US Law Firm
           </Link>
         </div>
@@ -206,28 +202,28 @@ function Footer() {
           <p className="text-xl lg:text-2xl mb-4">
             <b>Site Map</b>
           </p>
-          <Link href="/" className="text-lg lg:text-xl">
+          <Link href="/" className="text-lg">
             Home
           </Link>
-          <Link href="/services/consulting" className="text-lg lg:text-xl">
+          <Link href="/services/consulting" className="text-lg">
             Services
           </Link>
-          <Link href="/events" className="text-lg lg:text-xl">
+          <Link href="/events" className="text-lg">
             Events
           </Link>
-          <Link href="/assets/cars" className="text-lg lg:text-xl">
+          <Link href="/assets/cars" className="text-lg">
             Assets
           </Link>
-          <Link href="/projects" className="text-lg lg:text-xl">
+          <Link href="/projects" className="text-lg">
             Projects
           </Link>
-          <Link href="/coworking" className="text-lg lg:text-xl">
+          <Link href="/coworking" className="text-lg">
             Coworking
           </Link>
-          <Link href="/about-us" className="text-lg lg:text-xl">
+          <Link href="/about-us" className="text-lg">
             About Us
           </Link>
-          <Link href="/contact" className="text-lg lg:text-xl">
+          <Link href="/contact" className="text-lg">
             Contact
           </Link>
         </div>
@@ -235,16 +231,16 @@ function Footer() {
           <p className="text-xl lg:text-2xl mb-4">
             <b>Privacy</b>
           </p>
-          <Link href="/privacy-policy" className="text:lg lg:text-xl">
+          <Link href="/privacy-policy" className="text:lg">
             Privacy Policy
           </Link>
-          <Link href="/terms-of-use" className="text-lg lg:text-xl">
+          <Link href="/terms-of-use" className="text-lg">
             Terms Of Use
           </Link>
-          <Link href="#" className="flex items-center gap-2 text-lg lg:text-xl">
+          {/* <Link href="#" className="flex items-center gap-2 text-md">
             Learn More{" "}
             <span className='inline-block w-4 h-4 lg:w-6 lg:h-6 bg-contain bg-no-repeat bg-[url("/img/arrow-right.svg")]'></span>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

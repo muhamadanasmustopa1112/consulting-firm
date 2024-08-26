@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Page() {
   return (
-    <div className="flex flex-col p-8 mx-20">
+    <div className="flex flex-col p-12 lg:p-24 bg-black/80 text-white">
       <h1 className="text-4xl font-semibold text-center">Terms of Use</h1>
       <p className="text-md text-center">Last Updated: Dec 2023</p>
       <hr className="border border-white w-[90%] self-center" />

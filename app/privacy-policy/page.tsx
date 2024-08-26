@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className="flex flex-col p-8 mx-20">
+    <div className="flex flex-col p-12lg:p-24 bg-black/80 text-white">
       <h1 className="text-4xl font-semibold text-center">Privacy Policy</h1>
       <p className="text-md text-center">Effective Date: Dec 2023</p>
       <hr className="border border-white w-[90%] self-center" />
