@@ -194,7 +194,7 @@ function Footer() {
           >
             Careers
           </Link>
-          <Link href="https://iuris.world" className="text-lg">
+          <Link href="https://iurislaw.co" className="text-lg">
             US Law Firm
           </Link>
         </div>
