@@ -1,12 +1,12 @@
 "use server";
 
-import { saveContact } from "@/utils/sheets";
+import nodemailer from "nodemailer";
 import { z } from "zod";
 
 const schema = z.object({
   email: z.string({
     invalid_type_error: "Invalid Email",
-    required_error: "Name is required",
+    required_error: "Email is required",
   }),
   name: z.string({
     required_error: "Name is required",
@@ -15,6 +15,25 @@ const schema = z.object({
     required_error: "Message is required",
   }),
 });
+
+async function sendContactEmail(contactData: { name: string; email: string; message: string }) {
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "anasfebrian0@gmail.com", 
+      pass: "oebr wtsd yffm cegh",
+    },
+  });
+
+  const mailOptions = {
+    from: contactData.email,
+    to: "pt.iurisinternational@gmail.com",
+    subject: `New Contact Form Submission from ${contactData.name}`,
+    text: `Name: ${contactData.name}\nEmail: ${contactData.email}\nMessage: ${contactData.message}`,
+  };
+
+  return transporter.sendMail(mailOptions);
+}
 
 export async function saveContactForm(prevState: any, formData: FormData) {
   const validatedFields = schema.safeParse({
@@ -29,15 +48,21 @@ export async function saveContactForm(prevState: any, formData: FormData) {
     };
   }
 
-  const save = await saveContact({
-    name: validatedFields.data.name,
-    email: validatedFields.data.email,
-    message: validatedFields.data.message,
-  });
+  try {
+    await sendContactEmail({
+      name: validatedFields.data.name,
+      email: validatedFields.data.email,
+      message: validatedFields.data.message,
+    });
 
-  if (save) {
     return { message: "success" };
-  } else {
-    return { message: "failed" };
+  } catch (error: any) {
+    console.error("Email Sending Error:", error);
+
+    if (error?.message) {
+      return { message: `Error: ${error.message}` };
+    }
+
+    return { message: "An unexpected error occurred while sending the email." };
   }
 }

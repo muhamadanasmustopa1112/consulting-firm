@@ -231,7 +231,7 @@ function Footer() {
           <p className="text-xl lg:text-2xl mb-4">
             <b>Privacy</b>
           </p>
-          <Link href="/privacy-policy" className="text:lg">
+          <Link href="/privacy-policy" className="text-lg">
             Privacy Policy
           </Link>
           <Link href="/terms-of-use" className="text-lg">

@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import { headers } from "next/headers";
+import Head from "next/head";
+import TermlyScript from "@/components/cookies/TermlyScript";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -85,6 +87,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`montserrat.className bg-black`}>
+        <TermlyScript />
         <Navbar />
         {children}
         <Footer />
