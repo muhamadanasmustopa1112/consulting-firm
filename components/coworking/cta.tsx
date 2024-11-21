@@ -108,12 +108,14 @@ const CallToAction = () => {
           The Solution for Your Working Space Needs.
         </p>
         <div className="self-center">
-          <button
-            type="button"
-            className="px-4 py-2 border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] w-36 transition-colors hover:bg-grey"
+          <a
+            href="/brochure.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] w-36 transition-colors hover:bg-grey text-center block"
           >
             Get Brochure
-          </button>
+          </a>
         </div>
         <div className="self-center">
           <Link href="/contact">

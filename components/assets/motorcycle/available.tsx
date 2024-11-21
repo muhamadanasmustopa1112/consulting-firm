@@ -22,44 +22,49 @@ const AvailableMotorCycle = (props: {
           : "flex flex-col lg:flex-row-reverse")
       }
     >
-      <div className="flex flex-col justify-between w-full">
-        <div>
-          <h3 className="text-4xl mb-6 font-semibold">{props.item.name}</h3>
-          <p className="mb-4">{props.item.description}</p>
-          <p className="font-semibold text-xl mb-2">Performance:</p>
-          <ul className="ml-4">
-            {props.item.performance.map((item, idx) => (
-              <li
-                key={idx}
-                className="list-disc leading-[150%]"
-                dangerouslySetInnerHTML={{ __html: item }}
-              />
-            ))}
-          </ul>
-        </div>
-        <div className="flex flex-col gap-4">
-          <p className="text-xl font-semibold">{props.item.price}</p>
-          <Link
-            href="#"
-            className="w-fit px-8 py-4 border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] hover:bg-grey transition-all"
-          >
-            View Details
-          </Link>
+      <div className="flex flex-col lg:flex-row justify-between w-full">
+        {/* Bagian Informasi */}
+        <div className="flex flex-col w-full lg:w-2/3">
           <div>
-            {props.item.information.map((item, idx) => (
-              <p key={idx}>{item}</p>
-            ))}
+            <h3 className="text-4xl mb-6 font-semibold">{props.item.name}</h3>
+            <p className="mb-4">{props.item.description}</p>
+            <p className="font-semibold text-xl mb-2">Performance:</p>
+            <ul className="ml-4">
+              {props.item.performance.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="list-disc leading-[150%]"
+                  dangerouslySetInnerHTML={{ __html: item }}
+                />
+              ))}
+            </ul>
+          </div>
+          <div className="flex flex-col gap-4 mt-6">
+            <p className="text-xl font-semibold">{props.item.price}</p>
+            <Link
+              href="#"
+              className="w-fit px-8 py-4 border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] hover:bg-grey transition-all"
+            >
+              View Details
+            </Link>
+            <div>
+              {props.item.information.map((item, idx) => (
+                <p key={idx}>{item}</p>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="w-full">
-        <Image
-          src={props.item.image}
-          alt={props.item.name}
-          width={400}
-          height={400}
-          className="w-full h-full object-contain py-4 lg:py-0"
-        />
+
+        {/* Bagian Gambar */}
+        <div className="w-full lg:w-1/3 flex items-center justify-center mt-10 lg:mt-0">
+          <Image
+            src={props.item.image}
+            alt={props.item.name}
+            width={700} 
+            height={400} 
+            className="object-contain py-4 lg:py-0"
+          />
+        </div>
       </div>
     </div>
   );

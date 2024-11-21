@@ -18,12 +18,12 @@ export default function Page() {
             Agreement. Let's embark on innovation together-simply fill out the
             form below to express your interest and unlock the future with us.
           </p>
-          <button
-            type="button"
+          <a
+            href="/contact"
             className="px-5 py-2 border border-white rounded-tl-[1.875rem] rounded-br-[1.875rem] w-fit transition-colors hover:bg-gray-700"
           >
             Request Demo
-          </button>
+          </a>
         </div>
         <div className="hidden md:block w-1 bg-white"></div>
         <div className="w-full md:w-2/5">
@@ -35,15 +35,20 @@ export default function Page() {
           Unlock the power of legal AI with our insightful content, guiding you
           towards informed decisions in the ever-evolving legal landscape.
         </h2>
-        <button
-          type="button"
+        <a
+          href="https://iurislaw.co/legal-ai"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex flex-row items-center gap-2 text-lg md:text-xl"
         >
           <span className="underline underline-offset-4 break-words">
             Request White Paper
-          </span>{" "}
-          <span className="w-5 h-5 bg-[url('/img/arrow-right.svg')] bg-contain"></span>
-        </button>
+          </span>
+          <span
+            className="w-5 h-5 bg-[url('/img/arrow-right.svg')] bg-contain"
+            aria-hidden="true"
+          ></span>
+        </a>
       </div>
     </div>
   );

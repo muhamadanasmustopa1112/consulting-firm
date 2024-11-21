@@ -25,13 +25,13 @@ export function generateMetadata(): Metadata {
     metadataBase: new URL(host!),
     authors: [
       {
-        name: "IURIS International Indonesia",
+        name: "Consulting Firm | IURIS",
         url: host!,
       },
     ],
     title: {
-      default: "IURIS International Indonesia | Consulting Firm",
-      template: "%s - IURIS International Indonesia | Consulting Firm",
+      default: "Consulting Firm | IURIS",
+      template: "%s - Consulting Firm | IURIS",
     },
     description:
       "Platform that uses human and AI consultants to help you with any consultation task quickly.",
@@ -61,7 +61,7 @@ export function generateMetadata(): Metadata {
     },
     openGraph: {
       type: "website",
-      title: "IURIS International Indonesia | Consulting Firm",
+      title: "Consulting Firm | IURIS",
       description:
         "Platform that uses human and AI consultants to help you with any consultation task quickly.",
       locale: "en",
@@ -70,7 +70,7 @@ export function generateMetadata(): Metadata {
           url: "/android-chrome-192x192.png",
           width: 192,
           height: 192,
-          alt: "IURIS International Indonesia | Consulting Firm",
+          alt: "Consulting Firm | IURIS",
         },
       ],
     },
@@ -88,6 +88,32 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        {/* WhatsApp Widget */}
+        <a
+          href="https://wa.me/6288297915758"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            backgroundColor: "#25D366",
+            borderRadius: "50%",
+            width: "60px",
+            height: "60px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
+            zIndex: 1000,
+          }}
+        >
+          <img
+            src="/icons/wa.png"
+            alt="WhatsApp"
+            style={{ width: "45px", height: "45px" }}
+          />
+        </a>
       </body>
     </html>
   );

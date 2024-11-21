@@ -185,7 +185,7 @@ function Footer() {
             <b>Company</b>
           </p>
           <Link target="_blank" href="/whitepaper.pdf" className="text-lg">
-            Whitepaper
+            Disclaimer
           </Link>
           <Link
             target="_blank"

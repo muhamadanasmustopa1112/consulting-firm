@@ -10,6 +10,8 @@ const cars = [
     price: "Starts 14 Billion IDR*",
     information: "*Currently Only Available in Indonesia",
     image: "/img/cars/bentley-flying-spur-sv8-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci", 
+
   },
   {
     name: "Bentley Flying Spur V8 2023",
@@ -18,6 +20,8 @@ const cars = [
     price: "Starts 14 Billion IDR*",
     information: "*Currently Only Available in Indonesia",
     image: "/img/cars/bentley-flying-spur-v8-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci", 
+
   },
   {
     name: "Bentley Flying Spur Mulliner 2023",
@@ -26,6 +30,8 @@ const cars = [
     price: "Starts 14 Billion IDR*",
     information: "*Currently Only Available in Indonesia",
     image: "/img/cars/bentley-flying-spur-mulliner-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci", 
+
   },
   {
     name: "Lamborghini Urus S 2023",
@@ -34,6 +40,8 @@ const cars = [
     price: "Starts 21 Billion IDR*",
     information: "*Currently Only Available in Indonesia",
     image: "/img/cars/lamborghini-urus-s-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+
   },
   {
     name: "Porsche Taycan 2023",
@@ -41,6 +49,8 @@ const cars = [
     price: "Starts 7 Billion IDR*",
     information: "*Currently Only Available in Indonesia",
     image: "/img/cars/porsche-taycan-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+
   },
   {
     name: "Brabus G800 2023",
@@ -48,6 +58,8 @@ const cars = [
     price: "Starts 7 Billion IDR*",
     information: "*Currently Only Available in Indonesia",
     image: "/img/cars/brabus-g800-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+
   },
   {
     name: "Range Rover 2023",
@@ -56,6 +68,8 @@ const cars = [
     price: "Starts 7 Billion IDR*",
     information: "*Currently Only Available in Indonesia",
     image: "/img/cars/range-rover-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+
   },
   {
     name: "McLaren 765L T Spider Special MSO Two Tone Paint 2023",
@@ -65,6 +79,8 @@ const cars = [
     information: "*Currently Only Available in Indonesia",
     image:
       "/img/cars/mclaren-765l-t-spider-special-mso-two-tone-paint-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+
   },
 ];
 
@@ -74,12 +90,15 @@ const incomingCars = [
     description:
       "The Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet, classified as a pony car. It was first introduced on September 29, 1966, for the 1967 model year and was designed to compete with the Ford Mustang. The car is known for its athletic appearance and refined, driver-focused interior. The 2SS Camaro includes everything in the 3LT plus illuminated front cup holder, HD radiator and sport suspension. The top trim, the Camaro ZL1 offers a supercharged V8 and features launch control. A 6-speed manual is standard and 10-speed automatic is optional.",
     image: "/img/cars/chevrolet-camaro-2ss-convertible.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+
   },
   {
     name: "Chevrolet Camaro ZL1",
     description:
       "The Chevrolet Camaro ZL1 is a high-performance sports car manufactured by Chevrolet. It is the most powerful production Camaro ever built, with a supercharged 6.2L LT4 V8 engine that offers 650 horsepower and 881 Nm of torque 12. The car is known for its great handling, sharp steering, and stonking powertrain. The quick-shifting automatic transmission nets even quicker acceleration times than those fit with the stick. Chevy will produce a ZL1 Collector’s Edition, limited to only 350 cars.",
     image: "/img/cars/chevrolet-camaro-zl1.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
   },
 ];
 
@@ -96,7 +115,12 @@ const Cars = () => {
       </h2>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-4 px-6 lg:px-0">
         {cars.map((item) => (
-          <AvailableCar item={item} key={item.name} />
+          // Membungkus AvailableCar dengan Link untuk mengarah ke web lain
+          <Link href={item.url} key={item.name} passHref>
+            <div>
+              <AvailableCar item={item} />
+            </div>
+          </Link>
         ))}
       </div>
       <h2 className='mt-8 font-semibold text-4xl text-center relative before:content-[""] before:w-36 before:absolute before:-bottom-4 before:h-[2px] before:bg-white before:left-1/2 before:-translate-x-1/2'>

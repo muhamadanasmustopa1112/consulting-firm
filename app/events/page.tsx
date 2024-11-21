@@ -1,64 +1,64 @@
 export default function Page() {
   const events = [
     {
-      date: "Jan\n2024",
-      name: "New Year Celebration",
-      detail: "Central Park, 1st Jan, 6:00 PM",
-    },
-    {
-      date: "Feb\n2024",
-      name: "Valentine's Day Party",
-      detail: "Downtown Cafe, 14th Feb, 7:00 PM",
-    },
-    {
-      date: "Mar\n2024",
-      name: "Spring Festival",
-      detail: "City Square, 21st Mar, 10:00 AM",
-    },
-    {
-      date: "Apr\n2024",
-      name: "Earth Day",
-      detail: "Green Park, 22nd Apr, 9:00 AM",
-    },
-    {
-      date: "May\n2024",
-      name: "Labor Day Parade",
-      detail: "Main Street, 1st May, 9:00 AM",
-    },
-    {
-      date: "Jun\n2024",
-      name: "Summer Music Festival",
-      detail: "Beachside, 15th Jun, 4:00 PM",
-    },
-    {
-      date: "Jul\n2024",
-      name: "Independence Day Celebration",
-      detail: "City Hall, 4th Jul, 8:00 PM",
-    },
-    {
-      date: "Aug\n2024",
-      name: "Back to School Fair",
-      detail: "Community Center, 20th Aug, 10:00 AM",
-    },
-    {
-      date: "Sep\n2024",
-      name: "Autumn Harvest Festival",
-      detail: "Farmers Market, 25th Sep, 11:00 AM",
-    },
-    {
-      date: "Oct\n2024",
-      name: "Halloween Party",
-      detail: "Haunted House, 31st Oct, 7:00 PM",
-    },
-    {
-      date: "Nov\n2024",
-      name: "Thanksgiving Dinner",
-      detail: "Grand Hall, 28th Nov, 6:00 PM",
-    },
-    {
       date: "Dec\n2024",
-      name: "Christmas Eve Gala",
-      detail: "City Square, 24th Dec, 7:00 PM",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "Jan\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "FEB\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "MAR\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "APR\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "MAY\n2025",
+      name: "To Be Determinedl",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "JUN\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "JUL\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "AUG\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "SEP\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "OCT\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
+    },
+    {
+      date: "NOV\n2025",
+      name: "To Be Determined",
+      detail: "Location/Date/Time TBD",
     },
   ];
 
