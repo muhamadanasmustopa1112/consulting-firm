@@ -91,9 +91,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        {/* WhatsApp Widget */}
         <a
-          href="https://wa.me/6288297915758"
+          href="https://wa.me/62895327505299"
           target="_blank"
           rel="noopener noreferrer"
           style={{
