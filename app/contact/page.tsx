@@ -1,5 +1,6 @@
 import sourceSansPro from "@/components/ui/sourceSansPro";
 import ContactForm from "@/components/contact/form";
+import OfficeLocations from "@/components/contact/officeLocations";
 
 export default function Page() {
   return (
@@ -51,6 +52,8 @@ export default function Page() {
           </p>
         </div>
       </div>
+
+      <OfficeLocations />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import backgroundImage from "@/public/img/stars.jpg";
+import backgroundImage from "@/public/img/stars2.jpg";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

@@ -31,7 +31,7 @@ export default function Page() {
       </div>
 
       {/* Our Team Section */}
-      <div className="w-full md:w-3/4 text-center ">
+      {/* <div className="w-full md:w-3/4 text-center ">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">
           Our Team
         </h2>
@@ -68,7 +68,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
