@@ -18,7 +18,8 @@ function Footer() {
             availability subject to change.
           </p>
           <Link
-            href="#"
+            target="_blank"
+            href="/disclaimer.pdf"
             className="flex items-center gap-2 text-sm lg:text-base pt-2"
           >
             Learn More{" "}
@@ -185,7 +186,7 @@ function Footer() {
             <b>Company</b>
           </p>
           <Link target="_blank" href="/whitepaper.pdf" className="text-lg">
-            Disclaimer
+            Whitepaper
           </Link>
           <Link
             target="_blank"
@@ -231,11 +232,14 @@ function Footer() {
           <p className="text-xl lg:text-2xl mb-4">
             <b>Privacy</b>
           </p>
-          <Link href="/privacy-policy" className="text-lg">
+          <Link target="_blank" href="/privacy-police.pdf" className="text-lg">
             Privacy Policy
           </Link>
-          <Link href="/terms-of-use" className="text-lg">
+          <Link target="_blank" href="/terms-of-us.pdf" className="text-lg">
             Terms Of Use
+          </Link>
+          <Link target="_blank" href="/disclaimer.pdf" className="text-lg">
+            Disclaimer
           </Link>
           {/* <Link href="#" className="flex items-center gap-2 text-md">
             Learn More{" "}

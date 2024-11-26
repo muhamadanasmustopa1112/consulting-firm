@@ -2,97 +2,245 @@ import React from "react";
 import AvailableCar from "./car/available";
 import IncomingCar from "./car/incoming";
 import Link from "next/link";
+
 const cars = [
   {
-    name: "Bentley Flying Spur SV8 2023",
-    description:
-      "4.0L Twin-Turbo V8 Gas 542 hp @ 6000 rpm 568 lb-ft @ 2000 rpm\n8-Speed Automatic",
-    price: "Starts 14 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
-    image: "/img/cars/bentley-flying-spur-sv8-2023.png",
-    url: "https://son2ws4vyns.typeform.com/to/OELJewci", 
-
-  },
-  {
     name: "Bentley Flying Spur V8 2023",
-    description:
-      "4.0L Twin-Turbo V8 Gas 542 hp @ 6000 rpm 568 lb-ft @ 2000 rpm\n8-Speed Automatic",
+    description: [
+      "Engine: 4.0 litre Twin-turbocharged V8",
+      "Power: 550PS / 542bhp / 404kW @ 6000 rpm",
+      "Torque: 770Nm, 568 lb.ft @ 2000-4500 rpm",
+      "Transmission: 8-speed Dual Clutch",
+      "0 to 60: 4.0 seconds",
+      "Top Speed: 198mph / 318km/h",
+    ],
     price: "Starts 14 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
+    information: "*Incoming",
     image: "/img/cars/bentley-flying-spur-v8-2023.png",
-    url: "https://son2ws4vyns.typeform.com/to/OELJewci", 
-
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
   },
   {
-    name: "Bentley Flying Spur Mulliner 2023",
-    description:
-      "6.0L Twin-Turbo W12 Gas 626 hp @ 6000 rpm 664 lb-ft @ 2000 rpm\n8-Speed Automatic",
+    name: "Ferrari Roma",
+    description: [
+      "Engine: 4.0 litre Twin-turbocharged V8",
+      "Power: 550PS / 542bhp / 404kW @ 6000 rpm",
+      "Torque: 770Nm, 568 lb.ft @ 2000-4500 rpm",
+      "Transmission: 8-speed Dual Clutch",
+      "0 to 60: 4.0 seconds",
+      "Top Speed: 198mph / 318km/h",
+    ],
     price: "Starts 14 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
-    image: "/img/cars/bentley-flying-spur-mulliner-2023.png",
-    url: "https://son2ws4vyns.typeform.com/to/OELJewci", 
-
+    information: "*Incoming",
+    image: "/img/cars/ferrari-roma.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
   },
   {
-    name: "Lamborghini Urus S 2023",
-    description:
-      "8 Cylinders 666 CV (490kW) @ 6000 rpm 626.93 lb-ft @ 2300-4500 rpm\nFour-wheel drive with limited slip central differential and asymmetric/dynamic torque distribution (Torsen-type)",
-    price: "Starts 21 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
+    name: "Ferrari Purosangue",
+    description: [
+      "Engine: DOHC 48-valve V-12",
+      "Power: 819 hp @ 8250 rpm",
+      "Transmission: 8-speed dual-clutch automatic",
+      "0 to 60: 3.3 sec",
+      "Top Speed: 211 mph",
+    ],
+    price: "Starts 23 Billion IDR*",
+    information: "*Incoming",
+    image: "/img/cars/ferrari-purosangue.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Lamborghini Revulto",
+    description: [
+      "Engine: 6.5L V12 Plug-in Hybrid",
+      "Power: 814 hp @ 9,250 rpm (607 kW)",
+      "Torque: 535 lb·ft @ 6,750 rpm (725 N·m)",
+      "Transmission: 8-speed automatic",
+      "0 to 60: 2.5 seconds",
+      "Top Speed: 350 km/h (217 mph)",
+    ],
+    price: "Starts 23 Billion IDR*",
+    information: "*Incoming",
+    image: "/img/cars/lamborghini-revulto.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Lamborghini Urus S",
+    description: [
+      "Engine: 4,0 l V8",
+      "Power: 657 hp @ 6,000 rpm (490 kW)",
+      "Torque: 627 lb·ft @ 2,300 – 4,500 rpm (850 N·m)",
+      "Transmission: 8-speed automatic",
+      "0 to 60: 3.5 seconds",
+      "Top Speed: 305 km/h (190 mph)",
+    ],
+    price: "Starts 15 Billion IDR*",
+    information: "*Incoming",
     image: "/img/cars/lamborghini-urus-s-2023.png",
     url: "https://son2ws4vyns.typeform.com/to/OELJewci",
-
   },
   {
-    name: "Porsche Taycan 2023",
-    description: "Electric Vehicle 402 hp 254 lb-ft\n2-Speed Automated Manual",
-    price: "Starts 7 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
-    image: "/img/cars/porsche-taycan-2023.png",
+    name: "Lamborghini Huracan STO",
+    description: [
+      "Engine: 5.2 l V10",
+      "Power: 631 hp @ 8,000 rpm (471 kW)",
+      "Torque: 417 lb·ft @ 6,500 rpm (565 N·m)",
+      "Transmission: 7-speed automatic",
+      "0 to 60: 3.2 seconds",
+      "Top Speed: 325 km/h (202 mph)",
+    ],
+    price: "Starts 15 Billion IDR*",
+    information: "*Incoming",
+    image: "/img/cars/lamborghini-hurican-sto.png",
     url: "https://son2ws4vyns.typeform.com/to/OELJewci",
-
   },
   {
-    name: "Brabus G800 2023",
-    description: "K4 blocks 588 kW / 800 hp 1000 Nm\n2-Speed Automated Manual",
-    price: "Starts 7 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
-    image: "/img/cars/brabus-g800-2023.png",
-    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
-
-  },
-  {
-    name: "Range Rover 2023",
-    description:
-      "K4 blocks 338 kW / 5500-6500 rpm 550 Nm / 2000-5000 rpm\nAutomatic",
-    price: "Starts 7 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
-    image: "/img/cars/range-rover-2023.png",
-    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
-
-  },
-  {
-    name: "McLaren 765L T Spider Special MSO Two Tone Paint 2023",
-    description:
-      "4.0L Petrol Engine, 8 Cylinder 32 Valve DOHC 755 hp 800 Nm\nAutomatic",
-    price: "Starts 21 Billion IDR*",
-    information: "*Currently Only Available in Indonesia",
+    name: "Lamborghini Huracan Evo Spyder",
+    description: [
+      "Engine: V10",
+      "Power: 600+ horsepower",
+      "Torque: >400 lb-ft",
+      "Transmission: 7-speed dual-clutch",
+      "0 to 60: 3.5 sec",
+      "Top Speed: >200 mph",
+    ],
+    price: "Starts 15 Billion IDR*",
+    information: "*Incoming",
     image:
-      "/img/cars/mclaren-765l-t-spider-special-mso-two-tone-paint-2023.png",
+      "/img/cars/lamborghini-hurican-evo-spyder.png",
     url: "https://son2ws4vyns.typeform.com/to/OELJewci",
-
+  },
+  {
+    name: "Lamborghini Tecnica",
+    description: [
+      "Engine: V10",
+      "Power: 470/640 kW/CV at 8000 rpm",
+      "Torque: 565 Nm",
+      "Transmission: 7-speed Dual Clutch",
+      "0 to 60: 3.2 seconds",
+      "Top Speed: 325 km/h",
+    ],
+    price: "Starts 15 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/lamborghini-tecnica.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Rolls-Royce Spectre",
+    description: [
+      "Fuel Type: Electric",
+      "Power: 577 hp",
+      "Torque: 900 Nm",
+      "Transmission: Single Speed Automatic",
+      "0 to 60: 4.4 seconds",
+      "Top Speed: 250 kmph",
+    ],
+    price: "Starts 23 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/rolls-royce-spectre.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Mercedes Benz Maybach S 680",
+    description: [
+      "Engine: 6.0 l V12",
+      "Power: 612 hp @ 5,250 rpm (456 kW)",
+      "Torque: 664 lb·ft @ 2,000 – 4,000 rpm (900 N·m)",
+      "Transmission: 9-speed automatic",
+      "0 to 60: 4.5 seconds",
+      "Top Speed: 210 km/h (130 mph)",
+    ],
+    price: "Starts 14 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/mercedes-benz-maybach-s-60.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Mercedes Benz AMG G63 Black",
+    description: [
+      "Engine: V8 Automatic",
+      "Power: 430 kW (585 hp)",
+      "Torque: 850 Nm @ 2,500-3,500 rpm",
+      "Transmission: AMG SPEEDSHIFT TCT 9G",
+      "0 to 60: 4.4 sec",
+      "Top Speed: 137 mph",
+    ],
+    price: "Starts 8.5 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/mercedes-benz-amg-g63.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Mercedes Benz AMG G63 White",
+    description: [
+      "Engine: V8 Automatic",
+      "Power: 430 kW (585 hp)",
+      "Torque: 850 Nm @ 2,500-3,500 rpm",
+      "Transmission: AMG SPEEDSHIFT TCT 9G",
+      "0 to 60: 4.4 sec",
+      "Top Speed: 137 mph",
+    ],
+    price: "Starts 8.5 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/mercedes-benz-amg-g63-white.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Range Rover Silver",
+    description: [
+      "Engine: V6 and V8",
+      "Power: 254-518 hp",
+      "Torque: 443-461 lb-ft",
+      "Transmission: 8-speed automatic",
+      "0 to 60: 5.6 sec",
+      "Top Speed: 150 mph",
+    ],
+    price: "Starts 8 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/range-rover-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "LWB-White",
+    description: [
+      "Engine: 4.0 litre Twin-turbocharged V8",
+      "Power: 550PS / 542bhp / 404kW @ 6000 rpm",
+      "Torque: 770Nm, 568 lb.ft @ 2000-4500 rpm",
+      "Transmission: 8-speed Dual Clutch",
+      "0 to 60: 4.0 seconds",
+      "Top Speed: 198mph / 318km/h",
+    ],
+    price: "Starts 8 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/lwb.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
+  },
+  {
+    name: "Porsche Taycan White",
+    description: [
+      "Engine: Electric",
+      "Battery Capacity: 93.4 kWh",
+      "Power: 469 hp",
+      "Transmission: 1-speed direct drive",
+      "0 to 60: 5.4 sec",
+      "Top Speed: 143 mph",
+    ],
+    price: "Starts 7 Billion IDR*",
+    information: "*Incoming",
+    image:
+      "/img/cars/porsche-taycan-2023.png",
+    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
   },
 ];
 
 const incomingCars = [
-  {
-    name: "Chevrolet Camaro 2SS Convertible",
-    description:
-      "The Chevrolet Camaro is a mid-size American automobile manufactured by Chevrolet, classified as a pony car. It was first introduced on September 29, 1966, for the 1967 model year and was designed to compete with the Ford Mustang. The car is known for its athletic appearance and refined, driver-focused interior. The 2SS Camaro includes everything in the 3LT plus illuminated front cup holder, HD radiator and sport suspension. The top trim, the Camaro ZL1 offers a supercharged V8 and features launch control. A 6-speed manual is standard and 10-speed automatic is optional.",
-    image: "/img/cars/chevrolet-camaro-2ss-convertible.png",
-    url: "https://son2ws4vyns.typeform.com/to/OELJewci",
 
-  },
   {
     name: "Chevrolet Camaro ZL1",
     description:
@@ -113,9 +261,8 @@ const Cars = () => {
         <br />
         Available Cars
       </h2>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-4 px-6 lg:px-0">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-4 px-6 ">
         {cars.map((item) => (
-          // Membungkus AvailableCar dengan Link untuk mengarah ke web lain
           <Link href={item.url} key={item.name} passHref>
             <div>
               <AvailableCar item={item} />
@@ -140,4 +287,5 @@ const Cars = () => {
     </>
   );
 };
+
 export default Cars;

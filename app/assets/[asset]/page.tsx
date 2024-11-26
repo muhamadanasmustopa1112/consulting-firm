@@ -56,11 +56,11 @@ export default function Page({ params }: { params: { asset: string } }) {
   }
 
   return (
-    <div className="py-10 lg:py-0 flex flex-col gap-8 justify-center relative z-10 bg-black text-white">
+    <div className="py-10 lg:py-0 flex flex-col gap-8 justify-center relative z-10 bg-black text-white overflow-x-hidden">
       <h1 className="text-center text-4xl font-semibold">
         IURIS Assets : Asset Acquisition Division
       </h1>
-      <div className="flex flex-row justify-center gap-4">
+      <div className="flex flex-row flex-wrap justify-center gap-4">
         {assets.map((item, idx) => (
           <Link
             key={idx}
@@ -68,7 +68,7 @@ export default function Page({ params }: { params: { asset: string } }) {
             className={
               "text-sm text-center transition-all " +
               (item.path == params.asset
-                ? "text-white relative before:absolute before:-bottom-1 before:-left-[0.25rem] before:w-[calc(100%+0.5rem)] before:h-[1px] before:bg-white before:block"
+                ? "text-white relative before:absolute before:-bottom-1 before:left-0 before:w-full before:h-[1px] before:bg-white before:block"
                 : "text-grey")
             }
           >
