@@ -18,7 +18,6 @@ const OfficeLocations: React.FC = () => {
       locations: [
         { city: "Jakarta", address: "Axa Tower, Kuningan - Our headquarters", mapLink: "https://goo.gl/maps/example1" },
         { city: "Jakarta", address: "50/F, Menara BCA Grand Indonesia JI, Jl. M.H. Thamrin No.1, RT.1/RW.5, Menteng, Jakarta, Central Jakarta City, Jakarta 10310", mapLink: "https://goo.gl/maps/example1" },
-        { city: "Jakarta", address: "Menara BCA Grand Indonesia, Thamrin, Menteng, Jakarta, 10310", mapLink: "https://goo.gl/maps/example1" },
         { city: "Jakarta", address: "Plaza Indonesia, Level 5 Unit E021AB, Jl. M.H. Thamrin No.Kav. 28-30, Daerah Khusus Ibukota Jakarta 10350", mapLink: "https://goo.gl/maps/example1" },
         { city: "Jakarta", address: "Chubb Square, Jl. M.H. Thamrin No.10 9th Floor, Kb. Melati, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10230", mapLink: "https://goo.gl/maps/example1" },
         { city: "Bandung", address: "Menara Asia Afrika Floor 9 Jalan Asia Afika No.133-137", mapLink: "https://goo.gl/maps/example1" },
